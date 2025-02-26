@@ -129,6 +129,15 @@ const nextConfig: NextConfig = {
         ],
         source: '/webapi/plugin/store',
       },
+      {
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=7200,stale-while-revalidate=60',
+          },
+        ],
+        source: '/webapi/assistant/store',
+      },
     ];
   },
   logging: {
