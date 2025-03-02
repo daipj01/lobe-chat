@@ -156,6 +156,9 @@ const nextConfig: NextConfig = {
     },
   },
   output: buildWithDocker ? 'standalone' : undefined,
+  outputFileTracingIncludes: buildWithDocker
+    ? { '*': ['public/**/*', '.next/static/**/*'] }
+    : undefined,
   reactStrictMode: true,
   redirects: async () => [
     {
