@@ -102,15 +102,6 @@ const nextConfig: NextConfig = {
         ],
         source: '/apple-touch-icon.png',
       },
-      {
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, s-maxage=3600,stale-while-revalidate=60',
-          },
-        ],
-        source: '/trpc/lambda/agent.getAgentConfig,aiProvider.getAiProviderRuntimeState,user.getUserState',
-      },
     ];
   },
   logging: {
