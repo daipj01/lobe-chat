@@ -138,15 +138,6 @@ const nextConfig: NextConfig = {
         ],
         source: '/webapi/assistant/store',
       },
-      {
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, s-maxage=3600,stale-while-revalidate=60',
-          },
-        ],
-        source: '/trpc/lambda/message.getMessages,thread.getThreads',
-      },
     ];
   },
   logging: {
