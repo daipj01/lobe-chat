@@ -120,15 +120,6 @@ const nextConfig: NextConfig = {
         ],
         source: '/trpc/lambda/session.getGroupedSessions',
       },
-      {
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, s-maxage=7200,stale-while-revalidate=60',
-          },
-        ],
-        source: '/webapi/plugin/store',
-      },
     ];
   },
   logging: {
