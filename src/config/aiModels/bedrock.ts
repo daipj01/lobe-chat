@@ -30,6 +30,26 @@ const bedrockChatModels: AIChatModelCard[] = [
     },
     contextWindowTokens: 200_000,
     description:
+      'Claude 4 sonnet 是 Anthropic 最快的下一代模型。与 Claude 3 Haiku 相比，Claude 4 Sonnet 在各项技能上都有所提升，并在许多智力基准测试中超越了上一代最大的模型 Claude 3 Opus。',
+    displayName: 'Claude 4 Sonnet',
+    enabled: true,
+    id: 'us.anthropic.claude-sonnet-4-20250514-v1:0',
+    maxOutput: 8192,
+    pricing: {
+      input: 3,
+      output: 15,
+    },
+    releasedAt: '2025-05-24',
+    type: 'chat',
+  },
+  {
+    abilities: {
+      functionCall: true,
+      reasoning: true,
+      vision: true,
+    },
+    contextWindowTokens: 200_000,
+    description:
       'Claude 3.7 sonnet 是 Anthropic 最快的下一代模型。与 Claude 3 Haiku 相比，Claude 3.7 Sonnet 在各项技能上都有所提升，并在许多智力基准测试中超越了上一代最大的模型 Claude 3 Opus。',
     displayName: 'Claude 3.7 Sonnet',
     enabled: true,
