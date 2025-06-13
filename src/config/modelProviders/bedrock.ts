@@ -34,7 +34,7 @@ const Bedrock: ModelProviderCard = {
       displayName: 'Claude 4.0 Sonnet',
       enabled: true,
       functionCall: true,
-      id: 'anthropic.claude-sonnet-4-20250514-v1:0',
+      id: 'us.anthropic.claude-sonnet-4-20250514-v1:0',
       maxOutput: 8192,
       pricing: {
         cachedInput: 0.1,
