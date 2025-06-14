@@ -34,12 +34,12 @@ const bedrockChatModels: AIChatModelCard[] = [
     displayName: 'Claude 4 Sonnet',
     enabled: true,
     id: 'us.anthropic.claude-sonnet-4-20250514-v1:0',
-    maxOutput: 8192,
+    maxOutput: 2048,
     pricing: {
       input: 3,
       output: 15,
     },
-    releasedAt: '2025-05-24',
+    releasedAt: '2025-05-14',
     type: 'chat',
   },
   {
