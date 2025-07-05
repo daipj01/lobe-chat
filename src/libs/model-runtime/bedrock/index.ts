@@ -124,7 +124,7 @@ export class LobeBedrockAI implements LobeRuntimeAI {
       accept: 'application/json',
       body: JSON.stringify({
         anthropic_version: 'bedrock-2023-05-31',
-        max_tokens: max_tokens || 2048,
+        max_tokens: max_tokens || 65_536,
         messages: await buildAnthropicMessages(user_messages),
         system: system_message?.content as string,
         temperature: temperature / 2,
